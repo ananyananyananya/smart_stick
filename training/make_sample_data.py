@@ -20,8 +20,7 @@ def stand(n):
 
 
 def fall(n=300):
-    d = np.column_stack([rng.normal(0, 0.02, n), rng.normal(0, 0.02, n),
-                         1 + rng.normal(0, 0.02, n), rng.normal(0, 2, (n, 3))])
+    d = np.column_stack([rng.normal(0, 0.02, n), rng.normal(0, 0.02, n), 1 + rng.normal(0, 0.02, n), rng.normal(0, 2, (n, 3))])
     p = rng.integers(100, 160)
     d[p - 8:p, :3] *= 0.2
     d[p:p + 3, :3] += rng.normal(0, 1, (3, 3)) * 6 + 6

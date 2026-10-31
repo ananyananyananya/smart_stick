@@ -5,8 +5,8 @@ import sys
 import numpy as np
 
 root = sys.argv[1] if len(sys.argv) > 1 else "SisFall_dataset"
-os.makedirs("data", exist_ok=True)
-
+DATA_DIR = "data_sisfall"
+os.makedirs(DATA_DIR, exist_ok=True)
 ACC = 32 / 2 ** 13
 GYRO = 4000 / 2 ** 16
 
@@ -37,7 +37,7 @@ for path in files:
     d[:, :3] *= ACC
     d[:, 3:] = np.clip(d[:, 3:] * GYRO, -500, 500)
     label = "fall" if kind == "F" else "adl"
-    np.savetxt(f"data/{label}_{name}.csv", d, delimiter=",", fmt="%.3f")
+    np.savetxt(os.path.join(DATA_DIR, f"{label}_{name}.csv"),d,delimiter=",",fmt="%.3f")    
     done += 1
 
 print("converted", done, "files into data/")

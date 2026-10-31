@@ -25,9 +25,7 @@ def feats(w):
     a = np.linalg.norm(w[:, :3], axis=1)
     g = np.linalg.norm(w[:, 3:], axis=1)
     t = a[-25:]
-    return np.array([a.mean(), a.std(), a.max(), a.min(),
-                     g.mean(), g.std(), g.max(),
-                     t.std(), t.mean(), float((a < 0.6).sum())])
+    return np.array([a.mean(), a.std(), a.max(), a.min(), g.mean(), g.std(), g.max(), t.std(), t.mean(), float((a < 0.6).sum())])
 
 
 def predict(f, p):
@@ -52,8 +50,7 @@ rows = []
 for path in paths:
     name = os.path.basename(path)
     d = np.loadtxt(path, delimiter=",")
-    probs = np.array([predict(feats(d[s:s + W]), params)
-                      for s in range(0, len(d) - W + 1, STRIDE)])
+    probs = np.array([predict(feats(d[s:s + W]), params) for s in range(0, len(d) - W + 1, STRIDE)])
     if len(probs) == 0:
         continue
     is_fall = name.split("_")[0] == "fall"
@@ -71,5 +68,4 @@ for t in THRESHOLDS:
     bad_files = sum(r[2].max() > t for r in others)
     alarms = sum(int((r[2] > t).sum()) for r in others)
     per_min = alarms / minutes if minutes else 0
-    print(f"{t:9.2f}  {caught:3d}/{len(falls):<3d}             "
-          f"{bad_files:3d}/{len(others):<3d}                     {per_min:.2f}")
+    print(f"{t:9.2f}  {caught:3d}/{len(falls):<3d} " f"{bad_files:3d}/{len(others):<3d} {per_min:.2f}")
