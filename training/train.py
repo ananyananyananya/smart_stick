@@ -82,9 +82,7 @@ oof_pred = np.empty(len(y), dtype=int)
 oof_prob = np.empty(len(y), dtype=float)
 fold_f1 = []
 
-for fold, (tr, te) in enumerate(
-    cv.split(X, y, groups=groups), start=1
-):
+for fold, (tr, te) in enumerate(cv.split(X, y, groups=groups), start=1):
 
     Xt, yt = X[tr].copy(), y[tr].copy()
 
@@ -106,12 +104,7 @@ for fold, (tr, te) in enumerate(
         Xt = np.vstack([Xt, Xt[idx]])
         yt = np.concatenate([yt, yt[idx]])
     sc_fold = StandardScaler().fit(Xt)
-    clf_fold = MLPClassifier(
-        hidden_layer_sizes=(16, 8),
-        activation="relu",
-        max_iter=3000,
-        random_state=0
-    )
+    clf_fold = MLPClassifier(hidden_layer_sizes=(16, 8), activation="relu", max_iter=3000, random_state=0)
 
     clf_fold.fit(sc_fold.transform(Xt), yt)
     prob = clf_fold.predict_proba(sc_fold.transform(X[te]))[:, 1]
@@ -121,11 +114,7 @@ for fold, (tr, te) in enumerate(
     pred = (prob >= 0.8).astype(int)
     oof_pred[te] = pred
 
-    score = f1_score(
-        y[te], pred,
-        pos_label=1,
-        zero_division=0
-    )
+    score = f1_score(y[te], pred, pos_label=1, zero_division=0)
 
     fold_f1.append(score)
 
@@ -144,37 +133,17 @@ print("\nOverall confusion matrix:")
 print(confusion_matrix(y, oof_pred, labels=[0, 1]))
 
 print("\nOverall classification report:")
-print(
-    classification_report(
-        y,
-        oof_pred,
-        labels=[0, 1],
-        target_names=["not_fall", "fall"],
-        zero_division=0
-    )
-)
+print(classification_report(y, oof_pred, labels=[0, 1], target_names=["not_fall", "fall"], zero_division=0))
 
 print("\nThreshold Comparison")
 
 for threshold in [0.5, 0.6, 0.7, 0.8, 0.9]:
-
     pred_t = (oof_prob >= threshold).astype(int)
-
     print(f"\nThreshold: {threshold}")
-
     print("Confusion Matrix:")
     print(confusion_matrix(y, pred_t, labels=[0, 1]))
-
     print("Classification Report:")
-    print(
-        classification_report(
-            y,
-            pred_t,
-            labels=[0, 1],
-            target_names=["not_fall", "fall"],
-            zero_division=0
-        )
-    )
+    print(classification_report(y, pred_t, labels=[0, 1], target_names=["not_fall", "fall"], zero_division=0))
 
 Xt, yt = X.copy(), y.copy()
 
