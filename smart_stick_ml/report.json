@@ -1,0 +1,490 @@
+{
+ "threshold": 0.91,
+ "falls_caught": 0.9459399332591769,
+ "false_alarms_per_hour": 0.9517781084904432,
+ "window_auc": 0.9992022162256523,
+ "per_group": {
+  "SA": {
+   "falls_caught": 0.9532211259431225,
+   "false_alarms_per_hour": 0.7793643967386058
+  },
+  "SE": {
+   "falls_caught": 0.7786666666666666,
+   "false_alarms_per_hour": 1.2789100844058454
+  }
+ },
+ "trees": 40,
+ "depth": 8,
+ "features": [
+  "a_max",
+  "a_min",
+  "a_mean",
+  "a_std",
+  "w_max",
+  "w_mean",
+  "jerk_max",
+  "peak_pos",
+  "post_std",
+  "post_dev",
+  "pre_min",
+  "tilt_change",
+  "w_post_mean"
+ ],
+ "curve": [
+  {
+   "cutoff": 0.05,
+   "falls_caught": 0.9987764182424916,
+   "false_alarms_per_hour": 110.11658898665517
+  },
+  {
+   "cutoff": 0.06,
+   "falls_caught": 0.9987764182424916,
+   "false_alarms_per_hour": 101.27470829763527
+  },
+  {
+   "cutoff": 0.07,
+   "falls_caught": 0.9987764182424916,
+   "false_alarms_per_hour": 94.4881165675295
+  },
+  {
+   "cutoff": 0.08,
+   "falls_caught": 0.9987764182424916,
+   "false_alarms_per_hour": 87.77049426557521
+  },
+  {
+   "cutoff": 0.09,
+   "falls_caught": 0.9987764182424916,
+   "false_alarms_per_hour": 82.2529400134567
+  },
+  {
+   "cutoff": 0.1,
+   "falls_caught": 0.9987764182424916,
+   "false_alarms_per_hour": 77.17679010150768
+  },
+  {
+   "cutoff": 0.11,
+   "falls_caught": 0.9986651835372636,
+   "false_alarms_per_hour": 72.85930389922494
+  },
+  {
+   "cutoff": 0.12,
+   "falls_caught": 0.9984427141268075,
+   "false_alarms_per_hour": 68.27973386996658
+  },
+  {
+   "cutoff": 0.13,
+   "falls_caught": 0.9983314794215795,
+   "false_alarms_per_hour": 64.40365200785331
+  },
+  {
+   "cutoff": 0.14,
+   "falls_caught": 0.9981090100111235,
+   "false_alarms_per_hour": 61.051737799691324
+  },
+  {
+   "cutoff": 0.15,
+   "falls_caught": 0.9981090100111235,
+   "false_alarms_per_hour": 57.603266392117256
+  },
+  {
+   "cutoff": 0.16,
+   "falls_caught": 0.9976640711902114,
+   "false_alarms_per_hour": 54.54102378219148
+  },
+  {
+   "cutoff": 0.17,
+   "falls_caught": 0.9976640711902114,
+   "false_alarms_per_hour": 51.38222397285363
+  },
+  {
+   "cutoff": 0.18,
+   "falls_caught": 0.9976640711902114,
+   "false_alarms_per_hour": 48.74759181746704
+  },
+  {
+   "cutoff": 0.19,
+   "falls_caught": 0.9973303670745273,
+   "false_alarms_per_hour": 46.49918845972876
+  },
+  {
+   "cutoff": 0.2,
+   "falls_caught": 0.9971078976640712,
+   "false_alarms_per_hour": 44.4438995008146
+  },
+  {
+   "cutoff": 0.21,
+   "falls_caught": 0.9969966629588431,
+   "false_alarms_per_hour": 42.595518826354905
+  },
+  {
+   "cutoff": 0.22,
+   "falls_caught": 0.9968854282536151,
+   "false_alarms_per_hour": 40.78851980878609
+  },
+  {
+   "cutoff": 0.23,
+   "falls_caught": 0.996551724137931,
+   "false_alarms_per_hour": 38.84358193491432
+  },
+  {
+   "cutoff": 0.24,
+   "falls_caught": 0.996329254727475,
+   "false_alarms_per_hour": 37.09175845986669
+  },
+  {
+   "cutoff": 0.25,
+   "falls_caught": 0.9957730812013348,
+   "false_alarms_per_hour": 35.270965556667576
+  },
+  {
+   "cutoff": 0.26,
+   "falls_caught": 0.9956618464961068,
+   "false_alarms_per_hour": 33.93295865052884
+  },
+  {
+   "cutoff": 0.27,
+   "falls_caught": 0.9955506117908788,
+   "false_alarms_per_hour": 32.650127286911285
+  },
+  {
+   "cutoff": 0.28,
+   "falls_caught": 0.9954393770856508,
+   "false_alarms_per_hour": 31.132799867578697
+  },
+  {
+   "cutoff": 0.29,
+   "falls_caught": 0.9952169076751947,
+   "false_alarms_per_hour": 29.960319589003515
+  },
+  {
+   "cutoff": 0.3,
+   "falls_caught": 0.9952169076751947,
+   "false_alarms_per_hour": 28.67748822538596
+  },
+  {
+   "cutoff": 0.31,
+   "falls_caught": 0.9948832035595105,
+   "false_alarms_per_hour": 27.518801832441074
+  },
+  {
+   "cutoff": 0.32,
+   "falls_caught": 0.9948832035595105,
+   "false_alarms_per_hour": 26.37390932512648
+  },
+  {
+   "cutoff": 0.33,
+   "falls_caught": 0.9944382647385984,
+   "false_alarms_per_hour": 25.394543445375447
+  },
+  {
+   "cutoff": 0.34,
+   "falls_caught": 0.9941045606229143,
+   "false_alarms_per_hour": 24.27723870932145
+  },
+  {
+   "cutoff": 0.35,
+   "falls_caught": 0.9938820912124583,
+   "false_alarms_per_hour": 23.18752174452804
+  },
+  {
+   "cutoff": 0.36,
+   "falls_caught": 0.9935483870967742,
+   "false_alarms_per_hour": 22.346094721079968
+  },
+  {
+   "cutoff": 0.37,
+   "falls_caught": 0.9935483870967742,
+   "false_alarms_per_hour": 21.366728841328936
+  },
+  {
+   "cutoff": 0.38,
+   "falls_caught": 0.9932146829810901,
+   "false_alarms_per_hour": 20.56668347477175
+  },
+  {
+   "cutoff": 0.39,
+   "falls_caught": 0.9932146829810901,
+   "false_alarms_per_hour": 19.656287023172194
+  },
+  {
+   "cutoff": 0.4,
+   "falls_caught": 0.9925472747497219,
+   "false_alarms_per_hour": 18.85624165661501
+  },
+  {
+   "cutoff": 0.41,
+   "falls_caught": 0.9925472747497219,
+   "false_alarms_per_hour": 17.97343297627605
+  },
+  {
+   "cutoff": 0.42,
+   "falls_caught": 0.9922135706340378,
+   "false_alarms_per_hour": 17.145799838458274
+  },
+  {
+   "cutoff": 0.43,
+   "falls_caught": 0.9921023359288098,
+   "false_alarms_per_hour": 16.000907331143683
+  },
+  {
+   "cutoff": 0.44,
+   "falls_caught": 0.9921023359288098,
+   "false_alarms_per_hour": 15.325006935259163
+  },
+  {
+   "cutoff": 0.45,
+   "falls_caught": 0.9918798665183537,
+   "false_alarms_per_hour": 14.552549339962573
+  },
+  {
+   "cutoff": 0.46,
+   "falls_caught": 0.9915461624026697,
+   "false_alarms_per_hour": 13.904236715338648
+  },
+  {
+   "cutoff": 0.47,
+   "falls_caught": 0.9909899888765294,
+   "false_alarms_per_hour": 13.18695466256324
+  },
+  {
+   "cutoff": 0.48,
+   "falls_caught": 0.9906562847608453,
+   "false_alarms_per_hour": 12.648993122981686
+  },
+  {
+   "cutoff": 0.49,
+   "falls_caught": 0.9896551724137931,
+   "false_alarms_per_hour": 12.069649926509243
+  },
+  {
+   "cutoff": 0.5,
+   "falls_caught": 0.989321468298109,
+   "false_alarms_per_hour": 11.517894501297391
+  },
+  {
+   "cutoff": 0.51,
+   "falls_caught": 0.9887652947719688,
+   "false_alarms_per_hour": 11.00752073297643
+  },
+  {
+   "cutoff": 0.52,
+   "falls_caught": 0.9878754171301446,
+   "false_alarms_per_hour": 10.497146964655466
+  },
+  {
+   "cutoff": 0.53,
+   "falls_caught": 0.9874304783092325,
+   "false_alarms_per_hour": 9.945391539443616
+  },
+  {
+   "cutoff": 0.54,
+   "falls_caught": 0.9873192436040045,
+   "false_alarms_per_hour": 9.324666686080283
+  },
+  {
+   "cutoff": 0.55,
+   "falls_caught": 0.9869855394883204,
+   "false_alarms_per_hour": 8.910850117171394
+  },
+  {
+   "cutoff": 0.56,
+   "falls_caught": 0.9866518353726362,
+   "false_alarms_per_hour": 8.41427023448073
+  },
+  {
+   "cutoff": 0.57,
+   "falls_caught": 0.9863181312569522,
+   "false_alarms_per_hour": 8.014247551202137
+  },
+  {
+   "cutoff": 0.58,
+   "falls_caught": 0.98587319243604,
+   "false_alarms_per_hour": 7.655606524814434
+  },
+  {
+   "cutoff": 0.59,
+   "falls_caught": 0.9850945494994439,
+   "false_alarms_per_hour": 7.283171612796434
+  },
+  {
+   "cutoff": 0.6,
+   "falls_caught": 0.9845383759733036,
+   "false_alarms_per_hour": 6.841767272626954
+  },
+  {
+   "cutoff": 0.61,
+   "falls_caught": 0.9842046718576196,
+   "false_alarms_per_hour": 6.579683445651325
+  },
+  {
+   "cutoff": 0.62,
+   "falls_caught": 0.9839822024471635,
+   "false_alarms_per_hour": 6.317599618675695
+  },
+  {
+   "cutoff": 0.63,
+   "falls_caught": 0.9834260289210234,
+   "false_alarms_per_hour": 6.027928020439473
+  },
+  {
+   "cutoff": 0.64,
+   "falls_caught": 0.9830923248053393,
+   "false_alarms_per_hour": 5.724462536572955
+  },
+  {
+   "cutoff": 0.65,
+   "falls_caught": 0.982313681868743,
+   "false_alarms_per_hour": 5.420997052706436
+  },
+  {
+   "cutoff": 0.66,
+   "falls_caught": 0.9806451612903225,
+   "false_alarms_per_hour": 5.200294882621697
+  },
+  {
+   "cutoff": 0.67,
+   "falls_caught": 0.9798665183537264,
+   "false_alarms_per_hour": 4.869241627494586
+  },
+  {
+   "cutoff": 0.68,
+   "falls_caught": 0.9795328142380423,
+   "false_alarms_per_hour": 4.6623333430401415
+  },
+  {
+   "cutoff": 0.69,
+   "falls_caught": 0.978865406006674,
+   "false_alarms_per_hour": 4.331280087913031
+  },
+  {
+   "cutoff": 0.7,
+   "falls_caught": 0.9783092324805339,
+   "false_alarms_per_hour": 4.041608489676809
+  },
+  {
+   "cutoff": 0.71,
+   "falls_caught": 0.9779755283648498,
+   "false_alarms_per_hour": 3.724349120179995
+  },
+  {
+   "cutoff": 0.72,
+   "falls_caught": 0.9775305895439377,
+   "false_alarms_per_hour": 3.5036469500952543
+  },
+  {
+   "cutoff": 0.73,
+   "falls_caught": 0.9770856507230256,
+   "false_alarms_per_hour": 3.338120322531699
+  },
+  {
+   "cutoff": 0.74,
+   "falls_caught": 0.9758620689655172,
+   "false_alarms_per_hour": 3.0208609530348847
+  },
+  {
+   "cutoff": 0.75,
+   "falls_caught": 0.9746384872080089,
+   "false_alarms_per_hour": 2.7587771260592553
+  },
+  {
+   "cutoff": 0.76,
+   "falls_caught": 0.9740823136818687,
+   "false_alarms_per_hour": 2.620838269756293
+  },
+  {
+   "cutoff": 0.77,
+   "falls_caught": 0.9733036707452726,
+   "false_alarms_per_hour": 2.48289941345333
+  },
+  {
+   "cutoff": 0.78,
+   "falls_caught": 0.9727474972191323,
+   "false_alarms_per_hour": 2.3311666715200707
+  },
+  {
+   "cutoff": 0.79,
+   "falls_caught": 0.9717463848720801,
+   "false_alarms_per_hour": 2.2759911289988857
+  },
+  {
+   "cutoff": 0.8,
+   "falls_caught": 0.9704115684093437,
+   "false_alarms_per_hour": 2.0277011876535527
+  },
+  {
+   "cutoff": 0.81,
+   "falls_caught": 0.9687430478309232,
+   "false_alarms_per_hour": 1.944937873871775
+  },
+  {
+   "cutoff": 0.82,
+   "falls_caught": 0.9674082313681869,
+   "false_alarms_per_hour": 1.7242357037870346
+  },
+  {
+   "cutoff": 0.83,
+   "falls_caught": 0.9661846496106785,
+   "false_alarms_per_hour": 1.5587090762234794
+  },
+  {
+   "cutoff": 0.84,
+   "falls_caught": 0.9656284760845384,
+   "false_alarms_per_hour": 1.489739648071998
+  },
+  {
+   "cutoff": 0.85,
+   "falls_caught": 0.9632925472747497,
+   "false_alarms_per_hour": 1.4621518768114055
+  },
+  {
+   "cutoff": 0.86,
+   "falls_caught": 0.9616240266963293,
+   "false_alarms_per_hour": 1.3104191348781464
+  },
+  {
+   "cutoff": 0.87,
+   "falls_caught": 0.9593993325917687,
+   "false_alarms_per_hour": 1.2690374779872575
+  },
+  {
+   "cutoff": 0.88,
+   "falls_caught": 0.95706340378198,
+   "false_alarms_per_hour": 1.200068049835776
+  },
+  {
+   "cutoff": 0.89,
+   "falls_caught": 0.9529477196885429,
+   "false_alarms_per_hour": 1.1724802785751836
+  },
+  {
+   "cutoff": 0.9,
+   "falls_caught": 0.9506117908787541,
+   "false_alarms_per_hour": 1.1035108504237021
+  },
+  {
+   "cutoff": 0.91,
+   "falls_caught": 0.9459399332591769,
+   "false_alarms_per_hour": 0.9517781084904432
+  },
+  {
+   "cutoff": 0.92,
+   "falls_caught": 0.9394883203559511,
+   "false_alarms_per_hour": 0.896602565969258
+  },
+  {
+   "cutoff": 0.93,
+   "falls_caught": 0.9350389321468298,
+   "false_alarms_per_hour": 0.7862514809268878
+  },
+  {
+   "cutoff": 0.94,
+   "falls_caught": 0.928587319243604,
+   "false_alarms_per_hour": 0.744869824035999
+  },
+  {
+   "cutoff": 0.95,
+   "falls_caught": 0.9151279199110123,
+   "false_alarms_per_hour": 0.6896942815148138
+  }
+ ]
+}
